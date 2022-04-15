@@ -1,0 +1,36 @@
+<style>
+    *{
+        margin: 0;
+    }
+    #bg-color-change{
+        background: linear-gradient(-45deg, #f86060, #ec7c6d, #f1dd69, #a5f068, #4cddad, #23d5b7, #23c9d5, #587feb, #8153ec, #d64c91);
+        height: 100vh;
+        display: flex;
+        animation: changeMe 10s ease-in-out infinite;
+        background-size: 400% 400%;
+    }
+    #bg-color-change h1{
+        width: 30%;
+        margin: auto;
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    @keyframes changeMe{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 50% 100%;
+        }
+        100%{
+            background-position: 0% 100%;
+        }
+        
+    }
+</style>
+
+<section id="bg-color-change">
+    <h1> Animated color bc </h1>
+</section>
